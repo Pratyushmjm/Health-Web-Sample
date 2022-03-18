@@ -1,0 +1,182 @@
+html{
+    font-size: 10px;
+background-color:  lightsteelblue;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    
+}
+header {
+   width:100%;
+   height:100vh;
+   background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.3)), url("../img/back.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+nav{
+    width:100%;
+    height:15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+background-color:rgba(0,0,0,0.2);
+text-transform: uppercase;
+}
+
+nav .logo{
+    width:25%;
+    text-align: center;
+    color:cornsilk;
+   font-size: 2.1rem;
+}
+
+nav .menu{
+    justify-content:space-around;
+    align-items: center;
+    width:40%;
+   display: flex;
+    /* background-color: yellow; */
+}
+
+nav .menu a{
+    width:25%;
+    text-decoration: none;
+    color:cornsilk;
+    text-shadow: 2px 2px 4px #3f2323;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+main{
+    width:100%;
+    height:85vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    color:bisque
+    
+}
+
+section{
+
+}
+
+section h1{
+    font-size: 5.5rem; 
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 1px blue;
+}
+
+section h2{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin: 20px 0 10px ;
+}
+
+section p{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+section a{
+    font-size: 2.3rem;
+    text-decoration: none;
+    word-spacing: 5px;
+padding: 12px 30px;
+border-radius: 4px;
+outline: none;
+text-transform: uppercase;
+    
+}
+
+
+section .btnone{
+background-color: #fff;
+color:black
+
+}
+
+section .btntwo{
+    background-color: #66bef5;
+    color:white   
+}
+
+nav .menu a:first-child{
+    color:#66bef5;
+}
+
+.change_content:after{
+    content:'';
+    animation: changetext 10s infinite linear;
+    color:#66bef5;
+
+}
+
+@keyframes changetext
+{
+    0%{
+        content: "Yoga";
+    }
+    10%{
+        content: "Meditation";
+
+    }
+    30%{
+        content: "Cardio Training";
+    }
+    50%{
+        content: "Weight Training";
+    }
+    100%{
+        content: "Stretching";
+    }
+    
+    
+}
+
+
+div h1{
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    color: darkslateblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 5.2rem;
+    /* background-color: burlywood; */
+}
+hr{
+    border-top: 1px solid black;
+}
+main{
+    margin:100px;
+
+}
+
+
+ .box{
+    display: block;
+    float: left;
+    width: 30%;
+     padding:5px; 
+    padding-left:60px; 
+    overflow:hidden;
+   }
+
+   img{
+  width:100%;
+  height:35vh;
+  border-radius: 10px;
+  
+}
+img:hover{
+    transform:scale(1.5,1.5);
+    transition: .1s transform;
+}
